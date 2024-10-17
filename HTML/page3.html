@@ -1,0 +1,98 @@
+้<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        span{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>รายการหนังสือการ์ตูน</h1>
+    <table border="1" bgcolor="red" cellpadding="10" 
+    cellspacing="5">
+    <!--cellpadding="10"คือขยายพื้นที่จากด้านใน--> 
+    <!--cellspacing="5"คือขยายพื้นที่จากด้านนอก ขยายเส่นตาราง-->  
+        <thead><!--ประกาศส่วนหัวของตาราง-->
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคาสินค้า</th>
+            <th>ดำเนินการสั่งซื้อสินค้า</th>
+        </thead>
+        <tbody align="center"> 
+        <!--align="center" คือให้เนื้อหาที่อยู่ภายใน tbody อยู่ตรงกลางทั้งหมด-->  
+
+
+            <tr bgcolor="yellow" align="center"><!--ระบุแถว แต่ละแถวจะมีคอลลัมอยู่ภายใน-->
+                <td>D2004L182524</td><!--ระบุคอลลัม--> <!--รหัสสินค้า-->
+                <td>
+                    <img src="http://f.ptcdn.info/558/033/000/1437280568-maxresdefa-o.jpg" alt="Death Note" width="300px" height="230px">
+                </td> <!--ภาพสินค้า-->
+                <td>Death Note</td><!--ชื่อสินค้า-->
+                <td>150.00</td><!--ราคาสินค้า-->
+                <td rowspan="2" bgcolor="green">
+                    <a href="">สั่งซื้อ</a>
+                </td><!--ดำเนินการสั่งซื้อสินค้า-->
+            </tr>
+
+
+            <tr bgcolor="pink">
+                <td>HP2017G20047</td><!--รหัสสินค้า-->
+                <td bgcolor="orange"><center>
+                    <img src="https://bci.kinokuniya.com/jsp/images/book-img/97819/97819747/9781974713202.JPG" alt="Hell's Paradise"></center>
+                </td><!--ภาพสินค้า-->
+                <td>Hell's Paradise</td><!--ชื่อสินค้า-->
+                <td>89.00</td><!--ราคาสินค้า-->
+                <td>
+                    <a href="">สั่งซื้อ</a>
+                <td><!--ดำเนินการสั่งซื้อสินค้า-->
+            </tr>
+
+            
+            <tr></tr>
+        </tbody>
+        <tfoot>
+            <tr align="right" >
+              <td colspan="5"><b>ราคารวม : 239.00 บาท</b>   </td>
+              <td></td> 
+              <td></td> 
+            </tr>
+        </tfoot>
+     </table>
+<!--....................................................-->
+     <span style="color:red">
+         <h1>HTML5</h1>
+         <p>Kitsirirat</p>
+     </span>
+     <span style="color: aqua;">
+        <h1>CSS</h1>
+        <p>Kitsirirat</p>
+     </span>
+
+     <div style="color:red">
+        <h1>HTML5</h1>
+        <p>Kitsirirat</p> 
+     </div>
+     <div style="color: aqua;">
+        <h1>CSS</h1>
+        <p>Kitsirirat</p>
+     </div>
+
+     <span style="color:red">scoody-Doo</span>
+     <span style="color:red">scoody-Doo</span>
+     <span style="color:red">scoody-Doo</span>
+
+     <div style="color: rgb(47, 0, 255);">scoody-Doo</div>
+     <div style="color: rgb(84, 5, 158);">scoody-Doo</div>
+     <div style="color: rgb(63, 7, 168);">scoody-Doo</div>
+</body>
+</html>

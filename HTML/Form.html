@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+     <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+     <form align="center">
+         <div>
+             <label for="firstname">ชื่อจริง</label>
+             <input type="text" name="fname" placeholder="ป้อนชื่อจริงของคุณ (ก-ฮ)" required> <!--บ่งบอกว่าจะรับพวกข้อความเข้ามาทำงาน--> <!--placeholder="ป้อนชื่อจริงของคุณ" ใช้ใส่คำอธิบายข้างใน-->
+             <!-- required เป็นการให้ป้อนข้อมูลฟิลด์ชื่อจริง หากไม่ป้อนแล้ว เวลากดส่งข้อมูลมันจะทำไม่ได้-->
+            </div>
+         <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname" required> <!--บ่งบอกว่าจะรับพวกข้อความเข้ามาทำงาน-->
+        </div>
+        <div>
+            <label for="E-mail">E-mail</label>
+            <input type="email" name="E-mail" required> <!--บ่งบอกว่าจะรับพวกข้อความเข้ามาทำงาน-->
+        </div>
+        <div>
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password" required> <!--บ่งบอกว่าจะรับพวกข้อความเข้ามาทำงาน-->
+        </div>
+        <div>
+            <label for="ที่อยู่">ที่อยู่</label>
+            <textarea name=""  cols="30" row="10"></textarea>
+        </div>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="0" max="10" value="2" > <!--value="2" จะกำหนดค่าให้เลย-->
+     </div>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="0" max="10" value="2" readonly> <!--value="2" จะกำหนดค่าให้เลย-->
+            <!--readonly คืออ่านได้อย่างเดียว ห้ามมีการเปลี่ยนค่า คือมันจะใส่ข้อมูลอะไรไม่ได้เลย-->
+        </div>
+        <div>
+            <label for="birthdate">วันเกิด</label>
+            <input type="date" name="birthdate" > 
+        </div>
+        <div>
+            <label for="เบอร์โทรศัพท์">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel" > 
+        </div>
+        <div>
+            <label for="color">สีที่ชอบ</label>
+            <input type="color" name="สีที่ชอบ" > 
+        </div>
+        <div>
+            <label for="rangenumber">ช่วงตัวเลข</label>
+            <input type="range" name="rangenumber" value="30"> 
+        </div>
+        
+        <div>
+                <label for="ระดับการศึกษา">ระดับการศึกษา</label>
+                <select name="edu" id=""> <!--option คือการสร้างตัวเลือกขึ้นมา-->
+                   <option value="มัธยมศึกษา">มัธยมศึกษา</option> <!--option คือตัวเลือก-->
+                   <option value="ปริญญาตรี">ปริญญาตรี</option>
+                   <option value="ปริญญาโท" selected>ปริญญาโท</option> <!--selected คือการเลือกตัวเลือกปริญญาโทเป็นค่าเริ่มต้น-->
+                   <option value="ปริญญาเอก">ปริญญาเอก</option>
+                </select>
+         </div>
+         <div>
+            <label for="เพศ">เพศ</label>
+            <input type="radio" name="gender">เพศชาย <!-- radio การเลือกช้อยได้เพียงแค่ช้อยเดียว-->
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">กำหนดเอง
+        </div>
+        <div>
+            <label for="เพศ">เพศ</label>
+            <input type="radio" name="">เพศชาย <!-- ถ้าไม่ได้กำหนด name หรือกำหนดเป็นชื่อที่ไม่เหมือนกัน หมายความว่าเป็นการแยกกลุ่มกัน-->
+            <input type="radio" name="">เพศหญิง
+            <input type="radio" name="xxx">กำหนดเอง
+        </div>
+        <div>
+            <label for="สิ่งที่ชอบ">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav">ฟังเพลง <!-- ถ้าไม่ได้กำหนด name หรือกำหนดเป็นชื่อที่ไม่เหมือนกัน หมายความว่าเป็นการแยกกลุ่มกัน-->
+            <input type="checkbox" name="fav">เขียนเว็บ
+            <input type="checkbox" name="fav">วาดรูป
+            <input type="checkbox" name="fav">แต่งนิยาย
+            <input type="checkbox" name="fav">อื่นๆ
+        </div>
+        <div>
+            <label for="แนบเอกสาร">แนบเอกสาร</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="เว็บไซต์">เว็บไซต์ของคุณ</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+            <button >แสดงข้อมูล</button>
+            <button type="submit">บันทึกข้อมูล</button>
+        </div>
+
+        
+     </form>
+</body>
+</html>
